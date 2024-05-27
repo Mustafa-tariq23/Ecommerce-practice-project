@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ openCart }) => {
       <nav className="navbar">
         {/* Logo Start */}
         <section className="logo">
-          <img src="src/assets/logo.jpg" alt="logo" />
+          <img src="public/assets/logo.jpg" alt="logo" />
         </section>
         {/* Logo end */}
 
@@ -22,7 +22,7 @@ const Navbar: React.FC<NavbarProps> = ({ openCart }) => {
         <section className="navOptions">
           <ul className="list">
             <li className="listItems listItems-1">
-              Shop <img src="src/assets/chevron-down.png" alt="drop down" />
+              Shop <img src="public/assets/chevron-down.png" alt="drop down" />
             </li>
             <li className="listItems">Most Wanted</li>
             <li className="listItems">New Arrivals</li>
@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ openCart }) => {
         {/* search and cart functionality */}
         <section className="searchAndCart">
           <div className="search">
-            <img src="src/assets/search.png" alt="Search img" />
+            <img src="public/assets/search.png" alt="Search img" />
             <input
               type="search"
               name="search"
@@ -43,21 +43,21 @@ const Navbar: React.FC<NavbarProps> = ({ openCart }) => {
             />
           </div>
           <img
-            src="src/assets/shopping-cart.png"
+            src="public/assets/shopping-cart.png"
             alt="cart"
             className="cart"
             onClick={openCart}
           />
-          <img src="src/assets/user.png" alt="user" className="user" />
+          <img src="public/assets/user.png" alt="user" className="user" />
         </section>
         {/* search and cart functionality end*/}
 
         {/* hamburger */}
         <section className="hamburger" onClick={() => setIsOpen(!Isopen)}>
           {!Isopen ? (
-            <img src="src/assets/menu.png" alt="menu" />
+            <img src="public/assets/menu.png" alt="menu" />
           ) : (
-            <img src="src/assets/x.png" alt="x" />
+            <img src="public/assets/x.png" alt="x" />
           )}
         </section>
       </nav>
